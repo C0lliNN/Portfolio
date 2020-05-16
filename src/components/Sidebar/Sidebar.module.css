@@ -1,0 +1,65 @@
+.Navbar {
+  background-color: #6f42c1 !important;
+}
+
+.Navbar .Link {
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  font-family: 'Muli', sans-serif;
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.Navbar .Brand {
+  color: #fff !important;
+}
+
+.Navbar .Link:hover {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.Navbar .Toggler {
+  outline-color: #66339950;
+}
+
+@media (min-width: 992px) {
+  .Navbar {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 17rem;
+    height: 100%;
+  }
+
+  .Navbar .Brand {
+    display: flex !important;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+
+  .Navbar .Profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  }
+
+  .Navbar .Collapse {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+
+  .Navbar .Collapse ul {
+    flex-direction: column;
+    width: 17rem;
+  }
+
+  .Navbar .Link {
+    display: block;
+  }
+}
