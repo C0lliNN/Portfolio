@@ -5,7 +5,9 @@ functions
 node_modules
 yarn-error.log
 package-lock.json
+firebase.json
 yarn.lock
+.firebaserc
 
 # Build directory
 /public
