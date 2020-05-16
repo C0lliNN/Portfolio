@@ -2,11 +2,11 @@
 
 The source code of my personal portfolio website.
 
-This Web App was created from the starter template available on (https://anubhavsrivastava.github.io/gatsby-starter-resume/)
+This Web App was created using the starter template available on https://anubhavsrivastava.github.io/gatsby-starter-resume/
 
 ![Screenshot](https://i.imgur.com/vcv3r9K.png)
 
-[Check it out!](raphaelcollin.com)
+### [Check it out!](raphaelcollin.com)
 
 ## Technologies/Libraries
 
