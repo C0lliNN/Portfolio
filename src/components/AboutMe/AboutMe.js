@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { FormattedMessage } from 'react-intl';
 
-const AboutMe = (props) => {
+const AboutMe = () => {
   return (
     <section
       className="resume-section p-3 p-lg-5 d-flex align-items-center"

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import classes from './Project.module.css';
 import { FormattedMessage } from 'react-intl';
@@ -35,6 +36,14 @@ const Project = (props) => {
       </div>
     </article>
   );
+};
+
+Project.propTypes = {
+  demoLink: PropTypes.string,
+  description: PropTypes.string,
+  img: PropTypes.string,
+  sourceLink: PropTypes.string,
+  title: PropTypes.string
 };
 
 export default Project;

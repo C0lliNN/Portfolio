@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import classes from './Sidebar.module.css';
 import Scrollspy from 'react-scrollspy';
@@ -89,7 +90,7 @@ const Sidebar = (props) => {
           offset={-300}
           className="navbar-nav"
         >
-          {tabs.map((tab, i) => {
+          {tabs.map((tab) => {
             const { href, content } = tab;
             return (
               <Nav.Item key={href} onClick={toggleExpanded}>
@@ -105,6 +106,12 @@ const Sidebar = (props) => {
       </Navbar.Collapse>
     </Navbar>
   );
+};
+
+Sidebar.propTypes = {
+  intl: PropTypes.shape({
+    formatMessage: PropTypes.func
+  })
 };
 
 export default injectIntl(Sidebar);

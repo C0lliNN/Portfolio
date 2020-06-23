@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { FormattedMessage, injectIntl } from 'react-intl';
 import hardwareSThorImg from '../../assets/img/hardware_sthor.png';
@@ -47,6 +48,12 @@ const Projects = (props) => {
       </div>
     </section>
   );
+};
+
+Projects.propTypes = {
+  intl: PropTypes.shape({
+    formatMessage: PropTypes.func
+  })
 };
 
 export default injectIntl(Projects);

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, { useRef, useState } from 'react';
 import classes from './Contact.module.css';
 import { FormattedMessage, injectIntl } from 'react-intl';
@@ -170,6 +171,12 @@ const Contact = (props) => {
       </div>
     </section>
   );
+};
+
+Contact.propTypes = {
+  intl: PropTypes.shape({
+    formatMessage: PropTypes.func
+  })
 };
 
 export default injectIntl(Contact);
