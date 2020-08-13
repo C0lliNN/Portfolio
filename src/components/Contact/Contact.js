@@ -70,52 +70,25 @@ const Contact = (props) => {
             <Form.Label>
               <FormattedMessage id="Name" defaultMessage="Name" />
             </Form.Label>
-            <Form.Control
-              placeholder={props.intl.formatMessage({
-                id: 'YourName',
-                defaultMessage: 'Your Name'
-              })}
-              ref={nameRef}
-            />
+            <Form.Control ref={nameRef} />
           </Form.Group>
           <Form.Group controlId="email">
             <Form.Label>
               <FormattedMessage id="Email" defaultMessage="Email" />
             </Form.Label>
-            <Form.Control
-              type="email"
-              placeholder={props.intl.formatMessage({
-                id: 'YourEmail',
-                defaultMessage: 'Your Email'
-              })}
-              ref={emailRef}
-            />
+            <Form.Control type="email" ref={emailRef} />
           </Form.Group>
           <Form.Group controlId="subject">
             <Form.Label>
               <FormattedMessage id="Subject" defaultMessage="Subject" />
             </Form.Label>
-            <Form.Control
-              placeholder={props.intl.formatMessage({
-                id: 'EnterSubject',
-                defaultMessage: 'Enter the Subject'
-              })}
-              ref={subjectRef}
-            />
+            <Form.Control ref={subjectRef} />
           </Form.Group>
           <Form.Group controlId="message">
             <Form.Label>
               <FormattedMessage id="Message" defaultMessage="Message" />
             </Form.Label>
-            <Form.Control
-              as="textarea"
-              rows="4"
-              placeholder={props.intl.formatMessage({
-                id: 'EnterMessage',
-                defaultMessage: 'Enter your Message...'
-              })}
-              ref={messageRef}
-            />
+            <Form.Control as="textarea" rows="4" ref={messageRef} />
           </Form.Group>
           <div className="text-right">
             <Button type="submit">

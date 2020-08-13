@@ -7,8 +7,13 @@ import {
   faJsSquare,
   faReact,
   faSass,
+  faLess,
   faNpm,
-  faGit
+  faGit,
+  faPhp,
+  faLaravel,
+  faBootstrap,
+  faNode
 } from '@fortawesome/free-brands-svg-icons';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -19,8 +24,13 @@ const Skills = (props) => {
     { icon: faHtml5 },
     { icon: faCss3Alt },
     { icon: faSass },
+    { icon: faLess },
+    { icon: faBootstrap },
     { icon: faJsSquare },
     { icon: faReact },
+    { icon: faNode },
+    { icon: faPhp },
+    { icon: faLaravel },
     { icon: faNpm },
     { icon: faGit }
   ];
