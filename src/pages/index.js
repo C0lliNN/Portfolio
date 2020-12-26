@@ -9,9 +9,10 @@ import messages_pt from '../translations/pt.json';
 import Skills from '../components/Skills';
 import Contact from '../components/Contact';
 import '../assets/sass/portfolio.scss';
+import Experience from '../components/Experience';
 
 const messages = {
-  pt: messages_pt,
+  pt: messages_pt
 };
 
 const language = window.navigator
@@ -24,6 +25,9 @@ const IndexPage = () => (
       <Sidebar />
       <div className="container-fluid p-0">
         <AboutMe />
+        <hr className="m-0" />
+
+        <Experience />
         <hr className="m-0" />
 
         <Projects />

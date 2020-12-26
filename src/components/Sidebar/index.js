@@ -22,6 +22,13 @@ const Sidebar = () => {
     },
     {
       content: formatMessage({
+        id: 'Experience',
+        defaultMessage: 'Experience'
+      }),
+      href: "experience"
+    },
+    {
+      content: formatMessage({
         id: 'Projects',
         defaultMessage: 'Projects'
       }).toLocaleString(),
