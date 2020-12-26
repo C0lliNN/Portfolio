@@ -105,7 +105,7 @@ const Contact = () => {
 
   return (
     <section
-      className="resume-section p-3 p-lg-5 d-flex align-items-center"
+      className="portfolio-section p-3 p-lg-5 d-flex align-items-center"
       id="contact"
     >
       <div className="w-100">

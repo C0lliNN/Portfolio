@@ -8,7 +8,6 @@ import shortlyImg from '../../assets/img/shortly.png';
 import Project from './Project';
 
 const Projects = () => {
-
   const formatMessage = useFormatMessage();
 
   const data = [
@@ -16,7 +15,8 @@ const Projects = () => {
       img: easyVestImg,
       title: 'Easy Vest',
       description: formatMessage({
-        id: 'A Application developed in Laravel + React that allow users create and share Questions and Lists of Questions.',
+        id:
+          'A Application developed in Laravel + React that allow users create and share Questions and Lists of Questions.',
         defaultMessage:
           'A Application developed in Laravel + React that allow users create and share Questions and Lists of Questions.'
       }).toLocaleString(),
@@ -37,7 +37,8 @@ const Projects = () => {
       img: movieLibraryImg,
       title: 'Movie Library',
       description: formatMessage({
-        id: 'A Web Application developed in ReactJS that allows users navigate throughout movies easily.',
+        id:
+          'A Web Application developed in ReactJS that allows users navigate throughout movies easily.',
         defaultMessage:
           'A Web Application developed in ReactJS that allows users navigate throughout movies easily.'
       }).toLocaleString(),
@@ -48,7 +49,8 @@ const Projects = () => {
       img: shortlyImg,
       title: 'Shortly',
       description: formatMessage({
-        id: 'A Landing Page for URL Shortener developed in HTML, LESS and Vanilla JS.',
+        id:
+          'A Landing Page for URL Shortener developed in HTML, LESS and Vanilla JS.',
         defaultMessage:
           'A Landing Page for URL Shortener developed in HTML, LESS and Vanilla JS.'
       }).toLocaleString(),
@@ -59,18 +61,18 @@ const Projects = () => {
 
   return (
     <section
-      className="resume-section p-3 p-lg-5 d-flex justify-content-center align-items-center"
+      className="portfolio-section px-0 py-3 px-md-3 px-lg-5 py-lg-5 d-flex justify-content-center align-items-center"
       id="projects"
     >
       <div className="w-100">
-        <h2 className="mb-5">
+        <h2 className="mb-5 px-3 px-md-0">
           {formatMessage({
             id: 'Projects',
             defaultMessage: 'Projects'
           })}
         </h2>
 
-        <div className="resume-item d-flex flex-column justify-content-between mb-5">
+        <div className="portfolio-item d-flex flex-column justify-content-between mb-5">
           {data.map((project) => (
             <Project {...project} key={project.title} />
           ))}

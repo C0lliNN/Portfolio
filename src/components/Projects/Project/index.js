@@ -12,7 +12,7 @@ const Project = (props) => {
       <div className={classes.ImageDiv}>
         <img src={props.img} alt={`Raphael Collin - ${props.title}`} />
       </div>
-      <div>
+      <div className="mx-3 mx-md-0">
         <h3>{props.title}</h3>
         <p className="lead">{props.description}</p>
         <a

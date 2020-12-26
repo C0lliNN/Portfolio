@@ -6,7 +6,7 @@ const IndexPage = () => (
   <Container>
     <div className="container-fluid p-0">
       <section
-        className="resume-section p-3 p-lg-5 d-flex align-items-center"
+        className="portfolio-section p-3 p-lg-5 d-flex align-items-center"
         id="about"
       >
         <header className="major">
