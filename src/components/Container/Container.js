@@ -21,10 +21,10 @@ const Container = (props) => {
           <Helmet
             title={data.site.siteMetadata.title}
             meta={[
-              { name: 'description', content: 'Portfolio' },
+              { name: 'description', content: 'Raphael Collin Developer Portfolio' },
               {
                 name: 'keywords',
-                content: 'Raphael Collin, Programmer Portfolio'
+                content: 'Raphael Collin, Developer, Software Developer, Web Developer'
               }
             ]}
           />
