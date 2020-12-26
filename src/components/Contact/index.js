@@ -123,7 +123,10 @@ const Contact = () => {
           {': '}
           <a href={`mailto:${config.email}`}>{config.email}</a>
         </p>
-        <Form onSubmit={handleSubmit(sendMessage)} className={`${classes.Form} shadow-sm`}>
+        <Form
+          onSubmit={handleSubmit(sendMessage)}
+          className={`${classes.Form} shadow-sm`}
+        >
           <Form.Group controlId="name">
             <Form.Label className="text-dark">
               {formatMessage({
@@ -253,12 +256,14 @@ const Contact = () => {
             <p className="lead text-dark">
               {error
                 ? formatMessage({
-                    id: 'ErrorMessage',
+                    id: 'Something went wrong. Try again later.',
                     defaultMessage: 'Something went wrong. Try again later.'
                   })
                 : formatMessage({
-                    id: 'Answer',
-                    defaultMessage: "I'll answer you as soon as possible!"
+                    id:
+                      "Message sent successfully!. I'll answer you as soon as possible.",
+                    defaultMessage:
+                      "Message sent successfully!. I'll answer you as soon as possible."
                   })}
             </p>
           </Modal.Body>

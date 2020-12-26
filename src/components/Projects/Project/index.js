@@ -33,7 +33,7 @@ const Project = (props) => {
           <FontAwesomeIcon icon={faEye} />
           &nbsp;
           {formatMessage({
-            id: 'SourceCode',
+            id: 'Source Code',
             defaultMessage: 'Source Code'
           })}
         </a>

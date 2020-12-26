@@ -35,19 +35,19 @@ const Skills = () => {
   const workflow = [
     {
       text: formatMessage({
-        id: 'MobileFirst',
+        id: 'Mobile-First, Responsive Design',
         defaultMessage: 'Mobile-First, Responsive Design'
       }).toLocaleString()
     },
     {
       text: formatMessage({
-        id: 'AgileDevelopment',
+        id: 'Agile Development',
         defaultMessage: 'Agile Development'
       }).toLocaleString()
     },
     {
       text: formatMessage({
-        id: 'TestDrivenDevelopment',
+        id: 'Test-Driven-Development',
         defaultMessage: 'Test-Driven-Development'
       }).toLocaleString()
     }

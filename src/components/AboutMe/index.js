@@ -26,11 +26,10 @@ const AboutMe = () => {
         </div>
         <p className="lead mb-5">
           {formatMessage({
-            id: 'MainText',
-            defaultMessage: `I'm Front-Developer that loves apply his knowledge to solve problems,
-            create powerful products and impact business/lives. I'm quietly
-            confident, naturally curious, and perpetually working on sharping my
-            skills.`
+            id:
+              "I'm Full-Stack Web Developer that loves apply his knowledge to solve problems, create powerful products and impact business/lives. I'm quietly confident, naturally curious, and perpetually working on sharping my skills.",
+            defaultMessage:
+              "I'm Full-Stack Web Developer that loves apply his knowledge to solve problems, create powerful products and impact business/lives. I'm quietly confident, naturally curious, and perpetually working on sharping my skills."
           })}
         </p>
         <div className="social-icons">

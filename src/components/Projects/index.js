@@ -16,7 +16,7 @@ const Projects = () => {
       img: easyVestImg,
       title: 'Easy Vest',
       description: formatMessage({
-        id: 'EasyVestDescription',
+        id: 'A Application developed in Laravel + React that allow users create and share Questions and Lists of Questions.',
         defaultMessage:
           'A Application developed in Laravel + React that allow users create and share Questions and Lists of Questions.'
       }).toLocaleString(),
@@ -27,8 +27,8 @@ const Projects = () => {
       img: hardwareSThorImg,
       title: 'HardwareSThor',
       description: formatMessage({
-        id: 'HardwareSThorDescription',
-        defaultMessage: 'A Hardware e-commerce developed fully in React'
+        id: 'A Hardware e-commerce developed fully in React.',
+        defaultMessage: 'A Hardware e-commerce developed fully in React.'
       }).toLocaleString(),
       demoLink: 'https://hardwaresthor.web.app/',
       sourceLink: 'https://github.com/C0lliNN/HardwareSthor'
@@ -37,8 +37,8 @@ const Projects = () => {
       img: movieLibraryImg,
       title: 'Movie Library',
       description: formatMessage({
-        id: 'MovieLibraryDescription',
-        formatMessage:
+        id: 'A Web Application developed in ReactJS that allows users navigate throughout movies easily.',
+        defaultMessage:
           'A Web Application developed in ReactJS that allows users navigate throughout movies easily.'
       }).toLocaleString(),
       demoLink: 'https://c0llinn.github.io/MovieLibrary/',
@@ -48,9 +48,9 @@ const Projects = () => {
       img: shortlyImg,
       title: 'Shortly',
       description: formatMessage({
-        id: 'ShortlyDescription',
+        id: 'A Landing Page for URL Shortener developed in HTML, LESS and Vanilla JS.',
         defaultMessage:
-          'A Landing Page for URL Shortener developed in HTML, LESS and Vanilla JS'
+          'A Landing Page for URL Shortener developed in HTML, LESS and Vanilla JS.'
       }).toLocaleString(),
       demoLink: 'https://c0llinn.github.io/Shortly/',
       sourceLink: 'https://github.com/C0lliNN/Shortly'
