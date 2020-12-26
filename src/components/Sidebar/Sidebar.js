@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import classes from './Sidebar.module.css';
 import Scrollspy from 'react-scrollspy';
@@ -9,36 +8,38 @@ import config from '../../../config';
 
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import { injectIntl } from 'react-intl';
+import { useFormatMessage } from 'react-intl-hooks';
 
-const Sidebar = (props) => {
+const Sidebar = () => {
+  const formatMessage = useFormatMessage();
+
   const tabs = useState([
     {
-      content: props.intl.formatMessage({
+      content: formatMessage({
         id: 'About Me',
         defaultMessage: 'About Me'
-      }),
+      }).toLocaleString(),
       href: 'about'
     },
     {
-      content: props.intl.formatMessage({
+      content: formatMessage({
         id: 'Projects',
         defaultMessage: 'Projects'
-      }),
+      }).toLocaleString(),
       href: 'projects'
     },
     {
-      content: props.intl.formatMessage({
+      content: formatMessage({
         id: 'Skills',
         defaultMessage: 'Skills'
-      }),
+      }).toLocaleString(),
       href: 'skills'
     },
     {
-      content: props.intl.formatMessage({
+      content: formatMessage({
         id: 'Contact',
         defaultMessage: 'Contact'
-      }),
+      }).toLocaleString(),
       href: 'contact'
     }
   ])[0];
@@ -108,10 +109,4 @@ const Sidebar = (props) => {
   );
 };
 
-Sidebar.propTypes = {
-  intl: PropTypes.shape({
-    formatMessage: PropTypes.func
-  })
-};
-
-export default injectIntl(Sidebar);
+export default Sidebar;

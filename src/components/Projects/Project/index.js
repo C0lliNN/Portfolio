@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import classes from './styles.module.scss';
-import { FormattedMessage } from 'react-intl';
+import { useFormatMessage } from 'react-intl-hooks';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Project = (props) => {
+  const formatMessage = useFormatMessage();
   return (
     <article className={classes.Project}>
       <div className={classes.ImageDiv}>
@@ -31,7 +32,10 @@ const Project = (props) => {
         >
           <FontAwesomeIcon icon={faEye} />
           &nbsp;
-          <FormattedMessage id="SourceCode" defaultMessage="Source Code" />
+          {formatMessage({
+            id: 'SourceCode',
+            defaultMessage: 'Source Code'
+          })}
         </a>
       </div>
     </article>

@@ -2,9 +2,11 @@ import React from 'react';
 import config from '../../../config';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { FormattedMessage } from 'react-intl';
+import { useFormatMessage } from 'react-intl-hooks';
 
 const AboutMe = () => {
+  const formatMessage = useFormatMessage();
+
   return (
     <section
       className="resume-section p-3 p-lg-5 d-flex align-items-center"
@@ -17,16 +19,19 @@ const AboutMe = () => {
         </h1>
         <div className="subheading mb-5">
           Campos dos Goytacazes, Rio de Janeiro{' - '}
-          <FormattedMessage id="Brazil" defaultMessage="Brazil" />
+          {formatMessage({
+            id: 'Brazil',
+            defaultMessage: 'Brazil'
+          })}
         </div>
         <p className="lead mb-5">
-          <FormattedMessage
-            id="MainText"
-            defaultMessage="I'm Front-Developer that loves apply his knowledge to solve problems,
-          create powerful products and impact business/lives. I'm quietly
-          confident, naturally curious, and perpetually working on sharping my
-          skills."
-          />
+          {formatMessage({
+            id: 'MainText',
+            defaultMessage: `I'm Front-Developer that loves apply his knowledge to solve problems,
+            create powerful products and impact business/lives. I'm quietly
+            confident, naturally curious, and perpetually working on sharping my
+            skills.`
+          })}
         </p>
         <div className="social-icons">
           <a

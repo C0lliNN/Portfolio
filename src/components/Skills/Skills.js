@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import classes from './Skills.module.css';
 import {
@@ -6,10 +5,8 @@ import {
   faCss3Alt,
   faJsSquare,
   faReact,
+  faVuejs,
   faSass,
-  faLess,
-  faNpm,
-  faGit,
   faPhp,
   faLaravel,
   faBootstrap,
@@ -17,42 +14,42 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { FormattedMessage, injectIntl } from 'react-intl';
+import { useFormatMessage } from 'react-intl-hooks';
 
-const Skills = (props) => {
-  const programmingLanguages = [
+const Skills = () => {
+  const formatMessage = useFormatMessage();
+
+  const skills = [
     { icon: faHtml5 },
     { icon: faCss3Alt },
     { icon: faSass },
-    { icon: faLess },
     { icon: faBootstrap },
     { icon: faJsSquare },
     { icon: faReact },
+    { icon: faVuejs },
     { icon: faNode },
     { icon: faPhp },
-    { icon: faLaravel },
-    { icon: faNpm },
-    { icon: faGit }
+    { icon: faLaravel }
   ];
 
   const workflow = [
     {
-      text: props.intl.formatMessage({
+      text: formatMessage({
         id: 'MobileFirst',
         defaultMessage: 'Mobile-First, Responsive Design'
-      })
+      }).toLocaleString()
     },
     {
-      text: props.intl.formatMessage({
+      text: formatMessage({
         id: 'AgileDevelopment',
         defaultMessage: 'Agile Development'
-      })
+      }).toLocaleString()
     },
     {
-      text: props.intl.formatMessage({
+      text: formatMessage({
         id: 'TestDrivenDevelopment',
         defaultMessage: 'Test-Driven-Development'
-      })
+      }).toLocaleString()
     }
   ];
 
@@ -63,18 +60,20 @@ const Skills = (props) => {
     >
       <div className="w-100">
         <h2 className="mb-5">
-          <FormattedMessage id="Skills" defaultMessage="Skills" />
+          {formatMessage({
+            id: 'Skills',
+            defaultMessage: 'Skills'
+          })}
         </h2>
-
         <div className="SubHeading mb-3">
-          <FormattedMessage
-            id="ProgrammingLanguages"
-            defaultMessage="Programming Languages"
-          />{' '}
-          &amp; <FormattedMessage id="Tools" defaultMessage="Tools" />
+          {formatMessage({
+            id: 'Languages',
+            defaultMessage: 'Languages'
+          })}{' '}
+          &amp; {formatMessage({ id: 'Tools', defaultMessage: 'Tools' })}
         </div>
         <ul className="list-inline">
-          {programmingLanguages.map((item, index) => (
+          {skills.map((item, index) => (
             <li className="list-inline-item" key={index}>
               <FontAwesomeIcon icon={item.icon} className={classes.SkillIcon} />
             </li>
@@ -82,7 +81,10 @@ const Skills = (props) => {
         </ul>
 
         <div className="SubHeading mb-3">
-          <FormattedMessage id="Workflow" defaultMessage="Workflow" />
+          {formatMessage({
+            id: 'Workflow',
+            defaultMessage: 'Workflow'
+          })}
         </div>
         <ul className="fa-ul mb-0 list-none ml-0">
           {workflow.map((item, index) => (
@@ -97,10 +99,4 @@ const Skills = (props) => {
   );
 };
 
-Skills.propTypes = {
-  intl: PropTypes.shape({
-    formatMessage: PropTypes.func
-  })
-};
-
-export default injectIntl(Skills);
+export default Skills;

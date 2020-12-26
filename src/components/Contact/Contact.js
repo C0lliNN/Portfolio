@@ -1,11 +1,10 @@
-import PropTypes from 'prop-types';
 import React, { useRef, useState } from 'react';
 import classes from './Contact.module.css';
-import { FormattedMessage, injectIntl } from 'react-intl';
+import { useFormatMessage } from 'react-intl-hooks';
 import config from '../../../config';
 import { Form, Button, Spinner, Modal } from 'react-bootstrap';
 
-const Contact = (props) => {
+const Contact = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [error, setError] = useState({});
@@ -14,6 +13,8 @@ const Contact = (props) => {
   const emailRef = useRef();
   const subjectRef = useRef();
   const messageRef = useRef();
+
+  const formatMessage = useFormatMessage();
 
   const sendMessage = (event) => {
     event.preventDefault();
@@ -59,40 +60,62 @@ const Contact = (props) => {
     >
       <div className="w-100">
         <h2>
-          <FormattedMessage id="Contact" defaultMessage="Contact" />
+          {formatMessage({
+            id: 'Contact',
+            defaultMessage: 'Contact'
+          })}
         </h2>
         <p className="lead">
-          <FormattedMessage id="Email" defaultMessage="Email" />:{' '}
+          {formatMessage({
+            id: 'Email',
+            defaultMessage: 'Email'
+          })}
+          {': '}
           <a href={`mailto:${config.email}`}>{config.email}</a>
         </p>
         <Form onSubmit={sendMessage} className={classes.Form}>
           <Form.Group controlId="name">
             <Form.Label>
-              <FormattedMessage id="Name" defaultMessage="Name" />
+              {formatMessage({
+                id: 'Name',
+                defaultMessage: 'Name'
+              })}
             </Form.Label>
             <Form.Control ref={nameRef} />
           </Form.Group>
           <Form.Group controlId="email">
             <Form.Label>
-              <FormattedMessage id="Email" defaultMessage="Email" />
+              {formatMessage({
+                id: 'Email',
+                defaultMessage: 'Email'
+              })}
             </Form.Label>
             <Form.Control type="email" ref={emailRef} />
           </Form.Group>
           <Form.Group controlId="subject">
             <Form.Label>
-              <FormattedMessage id="Subject" defaultMessage="Subject" />
+              {formatMessage({
+                id: 'Subject',
+                defaultMessage: 'Subject'
+              })}
             </Form.Label>
             <Form.Control ref={subjectRef} />
           </Form.Group>
           <Form.Group controlId="message">
             <Form.Label>
-              <FormattedMessage id="Message" defaultMessage="Message" />
+              {formatMessage({
+                id: 'Message',
+                defaultMessage: 'Message'
+              })}
             </Form.Label>
             <Form.Control as="textarea" rows="4" ref={messageRef} />
           </Form.Group>
           <div className="text-right">
             <Button type="submit">
-              <FormattedMessage id="Send" defaultMessage="Send" />
+              {formatMessage({
+                id: 'Send',
+                defaultMessage: 'Send'
+              })}
             </Button>
           </div>
         </Form>
@@ -112,32 +135,37 @@ const Contact = (props) => {
                   error ? 'text-danger' : 'text-primary'
                 } font-weight-bold display-4`}
               >
-                {error ? (
-                  <FormattedMessage id="Error" defaultMessage="Error" />
-                ) : (
-                  <FormattedMessage id="Success" defaultMessage="Success" />
-                )}
+                {error
+                  ? formatMessage({
+                      id: 'Error',
+                      defaultMessage: 'Error'
+                    })
+                  : formatMessage({
+                      id: 'Success',
+                      defaultMessage: 'Success'
+                    })}
               </p>
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <p className="lead text-dark">
-              {error ? (
-                <FormattedMessage
-                  id="ErrorMessage"
-                  defaultMessage="Something went wrong. Try again later."
-                />
-              ) : (
-                <FormattedMessage
-                  id="Answer"
-                  defaultMessage="I'll answer you as soon as possible!"
-                />
-              )}
+              {error
+                ? formatMessage({
+                    id: 'ErrorMessage',
+                    defaultMessage: 'Something went wrong. Try again later.'
+                  })
+                : formatMessage({
+                    id: 'Answer',
+                    defaultMessage: "I'll answer you as soon as possible!"
+                  })}
             </p>
           </Modal.Body>
           <Modal.Footer>
             <Button variant={error ? 'danger' : 'primary'} onClick={closeModal}>
-              <FormattedMessage id="Close" defaultMessage="Close" />
+              {formatMessage({
+                id: 'Close',
+                defaultMessage: 'Close'
+              })}
             </Button>
           </Modal.Footer>
         </Modal>
@@ -146,10 +174,4 @@ const Contact = (props) => {
   );
 };
 
-Contact.propTypes = {
-  intl: PropTypes.shape({
-    formatMessage: PropTypes.func
-  })
-};
-
-export default injectIntl(Contact);
+export default Contact;

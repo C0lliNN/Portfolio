@@ -1,54 +1,57 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { FormattedMessage, injectIntl } from 'react-intl';
+import { useFormatMessage } from 'react-intl-hooks';
 import easyVestImg from '../../assets/img/easy_vest.png';
 import hardwareSThorImg from '../../assets/img/hardware_sthor.png';
 import movieLibraryImg from '../../assets/img/movie_library.png';
 import shortlyImg from '../../assets/img/shortly.png';
 import Project from './Project';
 
-const Projects = (props) => {
+const Projects = () => {
+
+  const formatMessage = useFormatMessage();
+
   const data = [
     {
       img: easyVestImg,
       title: 'Easy Vest',
-      description: props.intl.formatMessage({
+      description: formatMessage({
         id: 'EasyVestDescription',
         defaultMessage:
           'A Application developed in Laravel + React that allow users create and share Questions and Lists of Questions.'
-      }),
+      }).toLocaleString(),
       demoLink: 'http://easy-vest.herokuapp.com/',
       sourceLink: 'https://github.com/C0lliNN/EasyVest'
     },
     {
       img: hardwareSThorImg,
       title: 'HardwareSThor',
-      description: props.intl.formatMessage({
+      description: formatMessage({
         id: 'HardwareSThorDescription',
         defaultMessage: 'A Hardware e-commerce developed fully in React'
-      }),
+      }).toLocaleString(),
       demoLink: 'https://hardwaresthor.web.app/',
       sourceLink: 'https://github.com/C0lliNN/HardwareSthor'
     },
     {
       img: movieLibraryImg,
       title: 'Movie Library',
-      description: props.intl.formatMessage({
+      description: formatMessage({
         id: 'MovieLibraryDescription',
         formatMessage:
           'A Web Application developed in ReactJS that allows users navigate throughout movies easily.'
-      }),
+      }).toLocaleString(),
       demoLink: 'https://c0llinn.github.io/MovieLibrary/',
       sourceLink: 'https://github.com/C0lliNN/MovieLibrary'
     },
     {
       img: shortlyImg,
       title: 'Shortly',
-      description: props.intl.formatMessage({
+      description: formatMessage({
         id: 'ShortlyDescription',
         defaultMessage:
           'A Landing Page for URL Shortener developed in HTML, LESS and Vanilla JS'
-      }),
+      }).toLocaleString(),
       demoLink: 'https://c0llinn.github.io/Shortly/',
       sourceLink: 'https://github.com/C0lliNN/Shortly'
     }
@@ -61,7 +64,10 @@ const Projects = (props) => {
     >
       <div className="w-100">
         <h2 className="mb-5">
-          <FormattedMessage id="Projects" defaultMessage="Projects" />
+          {formatMessage({
+            id: 'Projects',
+            defaultMessage: 'Projects'
+          })}
         </h2>
 
         <div className="resume-item d-flex flex-column justify-content-between mb-5">
@@ -80,4 +86,4 @@ Projects.propTypes = {
   })
 };
 
-export default injectIntl(Projects);
+export default Projects;

@@ -4,7 +4,7 @@ import Container from '../components/Container/Container';
 import Sidebar from '../components/Sidebar/Sidebar';
 import AboutMe from '../components/AboutMe';
 import Projects from '../components/Projects';
-import { IntlProvider } from 'react-intl';
+import { IntlProvider } from 'react-intl-hooks';
 import messages_pt from '../translations/pt.json';
 import messages_en from '../translations/en.json';
 import Skills from '../components/Skills/Skills';

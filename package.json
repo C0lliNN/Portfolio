@@ -24,7 +24,7 @@
     "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
     "react-images": "^1.1.0",
-    "react-intl": "^4.5.1",
+    "react-intl-hooks": "^1.0.11",
     "react-scrollspy": "^3.4.2",
     "smoothscroll-polyfill": "^0.4.4"
   },
