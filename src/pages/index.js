@@ -1,14 +1,14 @@
 import React from 'react';
 import window from 'global';
-import Container from '../components/Container/Container';
-import Sidebar from '../components/Sidebar/Sidebar';
+import Container from '../components/Container';
+import Sidebar from '../components/Sidebar';
 import AboutMe from '../components/AboutMe';
 import Projects from '../components/Projects';
 import { IntlProvider } from 'react-intl-hooks';
 import messages_pt from '../translations/pt.json';
-import Skills from '../components/Skills/Skills';
+import Skills from '../components/Skills';
 import Contact from '../components/Contact';
-import '../assets/sass/resume.scss';
+import '../assets/sass/portfolio.scss';
 
 const messages = {
   pt: messages_pt,

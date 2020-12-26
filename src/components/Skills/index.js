@@ -1,5 +1,4 @@
 import React from 'react';
-import classes from './Skills.module.css';
 import {
   faHtml5,
   faCss3Alt,
@@ -65,22 +64,24 @@ const Skills = () => {
             defaultMessage: 'Skills'
           })}
         </h2>
-        <div className="SubHeading mb-3">
+        <div className="subheading mb-3">
           {formatMessage({
             id: 'Languages',
             defaultMessage: 'Languages'
           })}{' '}
           &amp; {formatMessage({ id: 'Tools', defaultMessage: 'Tools' })}
         </div>
-        <ul className="list-inline">
+        <ul className="list-inline dev-icons">
           {skills.map((item, index) => (
             <li className="list-inline-item" key={index}>
-              <FontAwesomeIcon icon={item.icon} className={classes.SkillIcon} />
+              <i>
+                <FontAwesomeIcon icon={item.icon} />
+              </i>
             </li>
           ))}
         </ul>
 
-        <div className="SubHeading mb-3">
+        <div className="subheading mb-3">
           {formatMessage({
             id: 'Workflow',
             defaultMessage: 'Workflow'
@@ -88,7 +89,7 @@ const Skills = () => {
         </div>
         <ul className="fa-ul mb-0 list-none ml-0">
           {workflow.map((item, index) => (
-            <li className={classes.WorkflowItem} key={index}>
+            <li className="" key={index}>
               <FontAwesomeIcon icon={faCheck} />
               &nbsp;{item.text}
             </li>
