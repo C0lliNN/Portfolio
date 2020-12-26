@@ -24,5 +24,17 @@
   "EnterSubject": "Informe o Assunto",
   "Message": "Mensagem",
   "EnterMessage": "Informe sua mensagem...",
-  "Send": "Enviar"
+  "Send": "Enviar",
+  "Sending": "Enviando...",
+  "Field Required": "Campo obrigatório",
+  "Close": "Fechar",
+  "Invalid Email": "Email Inválido",
+  "ErrorMessage": "Algo deu errado. Tente novamente mais tarde!",
+  "Answer": "Mensagem enviada com sucesso. Entrarei em contato em breve",
+  "Error": "Erro",
+  "Success": "Sucesso",
+  "Enter your Name": "Informe seu Nome",
+  "Enter your Email": "Informe seu Email",
+  "Enter the Subject": "Informe o Assunto",
+  "Enter the Message": "Informe a Mensagem"
 }

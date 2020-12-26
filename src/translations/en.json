@@ -24,5 +24,13 @@
   "EnterSubject": "Enter the Subject",
   "Message": "Message",
   "EnterMessage": "Enter your Message...",
-  "Send": "Send"
+  "Send": "Send",
+  "Sending": "Sending...",
+  "Close": "Close",
+  "Field Required": "Field Required",
+  "Invalid Email": "Invalid Email",
+  "ErrorMessage": "Something went wrong. Try again later.",
+  "Answer": "Message sent successfully! I'll answer you as soon as possible",
+  "Error": "Error",
+  "Success": "Success"
 }

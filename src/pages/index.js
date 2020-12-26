@@ -8,7 +8,7 @@ import { IntlProvider } from 'react-intl-hooks';
 import messages_pt from '../translations/pt.json';
 import messages_en from '../translations/en.json';
 import Skills from '../components/Skills/Skills';
-import Contact from '../components/Contact/Contact';
+import Contact from '../components/Contact';
 import '../assets/sass/resume.scss';
 
 const messages = {
