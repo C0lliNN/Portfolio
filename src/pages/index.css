@@ -60,6 +60,12 @@ label {
   color: #6f42c1 !important;
 }
 
+.form-control:focus,
+.btn-primary:focus {
+  border-color: #6f42c1;
+  box-shadow: 0 0 0 0.2rem #6e42c162;
+}
+
 a {
   color: #6f42c1 !important;
 }

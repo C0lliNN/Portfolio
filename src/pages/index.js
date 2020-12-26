@@ -1,9 +1,7 @@
 import React from 'react';
-
+import window from 'global';
 import Container from '../components/Container/Container';
 import Sidebar from '../components/Sidebar/Sidebar';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './index.css';
 import AboutMe from '../components/AboutMe/AboutMe';
 import Projects from '../components/Projects/Projects';
 import { IntlProvider } from 'react-intl';
@@ -11,7 +9,7 @@ import messages_pt from '../translations/pt.json';
 import messages_en from '../translations/en.json';
 import Skills from '../components/Skills/Skills';
 import Contact from '../components/Contact/Contact';
-import window from 'global';
+import '../assets/sass/resume.scss';
 
 const messages = {
   pt: messages_pt,

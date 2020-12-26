@@ -1,7 +1,7 @@
 module.exports = {
   siteTitle: 'Raphael Collin',
-  manifestName: 'Portfolio',
-  manifestShortName: 'Landing', // max 12 characters
+  manifestName: 'Raphael Collin Portfolio',
+  manifestShortName: 'Raphael Collin', // max 12 characters
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',
   manifestThemeColor: '#663399',
