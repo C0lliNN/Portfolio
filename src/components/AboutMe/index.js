@@ -1,5 +1,4 @@
 import React from 'react';
-import classes from './AboutMe.module.css';
 import config from '../../../config';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
@@ -12,11 +11,11 @@ const AboutMe = () => {
       id="about"
     >
       <div className="w-100">
-        <h1 className={`mb-0 ${classes.Title}`}>
+        <h1 className="mb-0">
           {config.firstName}
           <span className="text-primary">{config.lastName}</span>
         </h1>
-        <div className="SubHeading mb-5">
+        <div className="subheading mb-5">
           Campos dos Goytacazes, Rio de Janeiro{' - '}
           <FormattedMessage id="Brazil" defaultMessage="Brazil" />
         </div>
@@ -29,7 +28,7 @@ const AboutMe = () => {
           skills."
           />
         </p>
-        <div className={classes.SocialIcons}>
+        <div className="social-icons">
           <a
             href="https://github.com/C0lliNN"
             target="_blank"

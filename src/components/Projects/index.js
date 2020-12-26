@@ -5,7 +5,7 @@ import easyVestImg from '../../assets/img/easy_vest.png';
 import hardwareSThorImg from '../../assets/img/hardware_sthor.png';
 import movieLibraryImg from '../../assets/img/movie_library.png';
 import shortlyImg from '../../assets/img/shortly.png';
-import Project from './Project/Project';
+import Project from './Project';
 
 const Projects = (props) => {
   const data = [
