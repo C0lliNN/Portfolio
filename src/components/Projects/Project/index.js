@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Project = (props) => {
   const formatMessage = useFormatMessage();
   return (
-    <article className={classes.Project}>
+    <article className={`${classes.Project} ${props.inVisible ? 'invisible' : ''}`}>
       <div className={classes.ImageDiv}>
         <img src={props.img} alt={`Raphael Collin - ${props.title}`} />
       </div>
@@ -47,7 +47,8 @@ Project.propTypes = {
   description: PropTypes.string,
   img: PropTypes.string,
   sourceLink: PropTypes.string,
-  title: PropTypes.string
+  title: PropTypes.string,
+  inVisible: PropTypes.bool
 };
 
 export default Project;

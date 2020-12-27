@@ -79,6 +79,13 @@ p.lead {
   }
 }
 
+.carousel-indicators li {
+  background-color: $primary;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+
 @media(min-width: 768px) {
   h1 {
     font-size: 6rem;
