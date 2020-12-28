@@ -1,9 +1,14 @@
 import * as functions from "firebase-functions";
 import * as yup from "yup";
 import * as nodemailer from "nodemailer";
+import * as cors from "cors";
 
-export const sendEmail = functions.https.onRequest(
-  async (request, response) => {
+const corsWrapper = cors({
+  origin: true,
+});
+
+export const sendEmail = functions.https.onRequest((request, response) => {
+  corsWrapper(request, response, async () => {
     const schema = yup.object().shape({
       subject: yup.string().required(),
       message: yup.string().required(),
@@ -42,5 +47,5 @@ export const sendEmail = functions.https.onRequest(
       response.sendStatus(500);
       functions.logger.error(err.message);
     }
-  },
-);
+  });
+});
