@@ -1,15 +1,12 @@
 import React from 'react';
 import {
-  faHtml5,
-  faCss3Alt,
   faJsSquare,
   faReact,
-  faVuejs,
-  faSass,
   faPhp,
   faLaravel,
-  faBootstrap,
-  faNode
+  faJava,
+  faDocker,
+  faAws
 } from '@fortawesome/free-brands-svg-icons';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -19,16 +16,13 @@ const Skills = () => {
   const formatMessage = useFormatMessage();
 
   const skills = [
-    { icon: faHtml5 },
-    { icon: faCss3Alt },
-    { icon: faSass },
-    { icon: faBootstrap },
     { icon: faJsSquare },
     { icon: faReact },
-    { icon: faVuejs },
-    { icon: faNode },
     { icon: faPhp },
-    { icon: faLaravel }
+    { icon: faLaravel },
+    { icon: faJava },
+    { icon: faDocker },
+    { icon: faAws }
   ];
 
   const workflow = [
