@@ -18,7 +18,7 @@ const Experience = () => {
         </h2>
         <div className="portfolio-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div>
-            <h3 className="mb-0">Fullstack Web Developer</h3>
+            <h3 className="mb-0">Fullstack Developer</h3>
             <div className="subheading mb-3">Gestão Inteligente Software</div>
             <li>
               {formatMessage({
