@@ -32,7 +32,6 @@
   "scripts": {
     "develop": "gatsby develop",
     "build": "npm run clean && gatsby build",
-    "deploy": "npm run build && firebase deploy --only hosting",
     "serve": "gatsby serve",
     "clean": "rimraf .cache public",
     "format": "prettier --write '**/*.js'",
@@ -41,7 +40,6 @@
   "devDependencies": {
     "eslint": "^7.3.1",
     "eslint-plugin-react": "^7.20.0",
-    "firebase-tools": "^8.7.0",
     "gatsby-cli": "^2.12.87",
     "gh-pages": "^2.0.1",
     "prettier": "^1.19.1",
