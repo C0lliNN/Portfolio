@@ -5,6 +5,7 @@ yarn-error.log
 yarn.lock
 
 # Build directory
+/public
 .DS_Store
 
 todo.txt
