@@ -18,43 +18,35 @@ const Experience = () => {
         </h2>
         <div className="portfolio-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div>
-            <h3 className="mb-0">Fullstack Developer</h3>
-            <div className="subheading mb-3">Gestão Inteligente Software</div>
+            <h3 className="mb-0">Software Engineer</h3>
+            <div className="subheading mb-3">Wex</div>
             <li>
               {formatMessage({
                 id:
-                  'Web development using technologies like PHP, Laravel, Vue.js, Bootstrap and Tailwind.',
+                  'I am currently working in a resilient, highly-scalable Card Issuer Processor that processes more than $USD 10 billions in transactions every year.',
                 defaultMessage:
-                  'Web development using technologies like PHP, Laravel, Vue.js, Bootstrap and Tailwind.'
+                  'I am currently working in a resilient, highly-scalable Card Issuer Processor that processes more than 10 billions USD every year.'
               })}
             </li>
             <li>
               {formatMessage({
                 id:
-                  'Implementation of integrations with external services like Mercado Pago Payments, Stripe Subscriptions and Google Speech-Recognition.',
+                  'The main technologies I am in touch with are Golang, MongoDB, SQS, and S3.',
                 defaultMessage:
-                  'Implementation of integrations with external services like Mercado Pago Payments, Stripe Subscriptions and Google Speech-Recognition.'
-              })}
-            </li>
-            <li>
-              {formatMessage({
-                id:
-                  'Conducting meetings with customers to identify requirements and to present results.',
-                defaultMessage:
-                  'Conducting meetings with customers to identify requirements and to present results.'
+                  'The main technologies I am in touch with are Golang, MongoDB, SQS, and S3.'
               })}
             </li>
           </div>
           <div className="portfolio-date text-md-right">
             <span className="text-primary">
               {formatMessage({
-                id: 'November 2020',
-                defaultMessage: 'November 2020'
+                id: 'January 2022',
+                defaultMessage: 'January 2022'
               })}
               {' - '}
               {formatMessage({
-                id: 'May 2021',
-                defaultMessage: 'May 2021'
+                id: 'Present',
+                defaultMessage: 'Present'
               })}
             </span>
           </div>
@@ -96,8 +88,51 @@ const Experience = () => {
               })}
               {' - '}
               {formatMessage({
-                id: 'Present',
-                defaultMessage: 'Present'
+                id: 'January 2022',
+                defaultMessage: 'January 2022'
+              })}
+            </span>
+          </div>
+        </div>
+        <div className="portfolio-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div>
+            <h3 className="mb-0">Fullstack Developer</h3>
+            <div className="subheading mb-3">Gestão Inteligente Software</div>
+            <li>
+              {formatMessage({
+                id:
+                  'Web development using technologies like PHP, Laravel, Vue.js, Bootstrap and Tailwind.',
+                defaultMessage:
+                  'Web development using technologies like PHP, Laravel, Vue.js, Bootstrap and Tailwind.'
+              })}
+            </li>
+            <li>
+              {formatMessage({
+                id:
+                  'Implementation of integrations with external services like Mercado Pago Payments, Stripe Subscriptions and Google Speech-Recognition.',
+                defaultMessage:
+                  'Implementation of integrations with external services like Mercado Pago Payments, Stripe Subscriptions and Google Speech-Recognition.'
+              })}
+            </li>
+            <li>
+              {formatMessage({
+                id:
+                  'Conducting meetings with customers to identify requirements and to present results.',
+                defaultMessage:
+                  'Conducting meetings with customers to identify requirements and to present results.'
+              })}
+            </li>
+          </div>
+          <div className="portfolio-date text-md-right">
+            <span className="text-primary">
+              {formatMessage({
+                id: 'November 2020',
+                defaultMessage: 'November 2020'
+              })}
+              {' - '}
+              {formatMessage({
+                id: 'May 2021',
+                defaultMessage: 'May 2021'
               })}
             </span>
           </div>

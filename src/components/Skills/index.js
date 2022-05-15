@@ -1,35 +1,36 @@
-import React from 'react';
 import {
-  faJsSquare,
-  faReact,
-  faPhp,
-  faLaravel,
-  faJava,
-  faDocker,
-  faAws
+  faAws, faDocker,
+  faGolang, faJava, faJsSquare, faPhp, faReact
 } from '@fortawesome/free-brands-svg-icons';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react';
 import { useFormatMessage } from 'react-intl-hooks';
 
 const Skills = () => {
   const formatMessage = useFormatMessage();
 
   const skills = [
+    { icon: faGolang},
+    { icon: faJava },
+    { icon: faPhp },
+    { icon: faAws },
+    { icon: faDocker },
     { icon: faJsSquare },
     { icon: faReact },
-    { icon: faPhp },
-    { icon: faLaravel },
-    { icon: faJava },
-    { icon: faDocker },
-    { icon: faAws }
   ];
 
   const workflow = [
     {
       text: formatMessage({
-        id: 'Mobile-First, Responsive Design',
-        defaultMessage: 'Mobile-First, Responsive Design'
+        id: 'Test-Driven-Development',
+        defaultMessage: 'Test-Driven-Development'
+      }).toLocaleString()
+    },
+    {
+      text: formatMessage({
+        id: 'SOLID Principles',
+        defaultMessage: 'SOLID Principles'
       }).toLocaleString()
     },
     {
@@ -38,12 +39,7 @@ const Skills = () => {
         defaultMessage: 'Agile Development'
       }).toLocaleString()
     },
-    {
-      text: formatMessage({
-        id: 'Test-Driven-Development',
-        defaultMessage: 'Test-Driven-Development'
-      }).toLocaleString()
-    }
+    
   ];
 
   return (
