@@ -19,13 +19,40 @@ const Experience = () => {
         <div className="portfolio-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div>
             <h3 className="mb-0">Software Engineer</h3>
+            <div className="subheading mb-3">Mercado Livre</div>
+            <li>
+              {formatMessage({
+                id:
+                  'I am currently working in the fraud prevention team at Mercado Livre.',
+                defaultMessage:
+                  'I am currently working in the fraud prevention team at Mercado Livre.'
+              })}
+            </li>
+          </div>
+          <div className="portfolio-date text-md-right">
+            <span className="text-primary">
+              {formatMessage({
+                id: 'April 2023',
+                defaultMessage: 'April 2023'
+              })}
+              {' - '}
+              {formatMessage({
+                id: 'Present',
+                defaultMessage: 'Present'
+              })}
+            </span>
+          </div>
+        </div>
+        <div className="portfolio-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div>
+            <h3 className="mb-0">Software Engineer</h3>
             <div className="subheading mb-3">Wex</div>
             <li>
               {formatMessage({
                 id:
-                  'I am currently working in a resilient, highly-scalable Card Issuer Processor that processes more than $USD 10 billions in transactions every year.',
+                  "I've worked in a resilient, highly-scalable Card Issuer Processor that processes more than $10 billions in transactions every year.",
                 defaultMessage:
-                  'I am currently working in a resilient, highly-scalable Card Issuer Processor that processes more than 10 billions USD every year.'
+                  "I've worked in a resilient, highly-scalable Card Issuer Processor that processes more than $10 billions in transactions every year."
               })}
             </li>
             <li>
@@ -45,8 +72,8 @@ const Experience = () => {
               })}
               {' - '}
               {formatMessage({
-                id: 'Present',
-                defaultMessage: 'Present'
+                id: 'April 2023',
+                defaultMessage: 'April 2023'
               })}
             </span>
           </div>
