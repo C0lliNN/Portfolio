@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import Scrollspy from 'react-scrollspy';
-import Scroll from '../Scroll';
+import React, { useState } from "react";
+import Scrollspy from "react-scrollspy";
+import Scroll from "../Scroll";
 
-import picture from '../../assets/img/profile_picture.jpg';
-import config from '../../../config';
+import picture from "../../assets/img/profile_picture.jpg";
+import config from "../../../config";
 
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import { useFormatMessage } from 'react-intl-hooks';
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import { useFormatMessage } from "react-intl-hooks";
 
 const Sidebar = () => {
   const formatMessage = useFormatMessage();
@@ -15,39 +15,44 @@ const Sidebar = () => {
   const tabs = useState([
     {
       content: formatMessage({
-        id: 'About Me',
-        defaultMessage: 'About Me'
+        id: "About Me",
+        defaultMessage: "About Me",
       }).toLocaleString(),
-      href: 'about'
+      href: "about",
     },
     {
       content: formatMessage({
-        id: 'Experience',
-        defaultMessage: 'Experience'
+        id: "Experience",
+        defaultMessage: "Experience",
       }),
-      href: "experience"
+      href: "experience",
     },
     {
       content: formatMessage({
-        id: 'Projects',
-        defaultMessage: 'Projects'
+        id: "Projects",
+        defaultMessage: "Projects",
       }).toLocaleString(),
-      href: 'projects'
+      href: "projects",
+    },
+    {
+      content: "Blog",
+      href: "https://medium.com/@gcollin65",
+      external: true,
     },
     {
       content: formatMessage({
-        id: 'Skills',
-        defaultMessage: 'Skills'
+        id: "Skills",
+        defaultMessage: "Skills",
       }).toLocaleString(),
-      href: 'skills'
+      href: "skills",
     },
     {
       content: formatMessage({
-        id: 'Contact',
-        defaultMessage: 'Contact'
+        id: "Contact",
+        defaultMessage: "Contact",
       }).toLocaleString(),
-      href: 'contact'
-    }
+      href: "contact",
+    },
   ])[0];
 
   const [expanded, setExpanded] = useState(false);
@@ -69,7 +74,7 @@ const Sidebar = () => {
       id="sideNav"
       expanded={expanded}
     >
-      <Navbar.Brand href="#page-top" >
+      <Navbar.Brand href="#page-top">
         <span className="d-block d-lg-none">
           {config.firstName} {config.lastName}
         </span>
@@ -98,12 +103,19 @@ const Sidebar = () => {
         >
           {tabs.map((tab) => {
             const { href, content } = tab;
+
+            if (tab.external) {
+              return (
+                <Nav.Item key={href}>
+                  <Nav.Link href={href} target="_blank">{content}</Nav.Link>
+                </Nav.Item>
+              );
+            }
+
             return (
               <Nav.Item key={href} onClick={toggleExpanded}>
                 <Scroll type="id" element={href}>
-                  <Nav.Link href={`#${href}`}>
-                    {content}
-                  </Nav.Link>
+                  <Nav.Link href={`#${href}`}>{content}</Nav.Link>
                 </Scroll>
               </Nav.Item>
             );
