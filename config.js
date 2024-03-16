@@ -10,5 +10,5 @@ module.exports = {
   pathPrefix: `/Portfolio`, // This path is subpath of your hosting https://domain/portfolio
   firstName: 'Raphael',
   lastName: 'Collin',
-  email: 'raphael_professional@yahoo.com'
+  email: 'gcollin65@gmail.com'
 };

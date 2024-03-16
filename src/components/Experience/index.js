@@ -20,14 +20,30 @@ const Experience = () => {
           <div>
             <h3 className="mb-0">Software Engineer</h3>
             <div className="subheading mb-3">Mercado Livre</div>
-            <li>
+            <p>
               {formatMessage({
                 id:
-                  'I am currently working in the fraud prevention team at Mercado Livre.',
+                  'meliExperience1',
                 defaultMessage:
-                  'I am currently working in the fraud prevention team at Mercado Livre.'
+                  'Currently, I am part of the fraud prevention team at Mercado Livre, serving as a Software Engineer. I am responsible for significantly contributing to the design and implementation of a range of credit products within the fraud prevention ecosystem, utilizing advanced skills in Golang and Java.'
               })}
-            </li>
+            </p>
+            <p className='my-3'>
+              {formatMessage({
+                id:
+                  'meliExperience2',
+                defaultMessage:
+                  `My contributions have been crucial to the development of innovative solutions that have resulted in a monthly saving of millions of dollars for the company, while also enhancing user experience, ensuring safer and more efficient transactions.`
+              })}
+            </p>
+            <p>
+              {formatMessage({
+                id:
+                  'meliExperience3',
+                defaultMessage:
+                  'Furthermore, I maintain direct contact with various types of databases and messaging services, leveraging cutting-edge technologies to ensure the effectiveness and reliability of the implemented systems.'
+              })}
+            </p>
           </div>
           <div className="portfolio-date text-md-right">
             <span className="text-primary">
@@ -47,22 +63,22 @@ const Experience = () => {
           <div>
             <h3 className="mb-0">Software Engineer</h3>
             <div className="subheading mb-3">Wex</div>
-            <li>
+            <p>
               {formatMessage({
                 id:
-                  "I've worked in a resilient, highly-scalable Card Issuer Processor that processes more than $10 billions in transactions every year.",
+                  "wexExperience1",
                 defaultMessage:
-                  "I've worked in a resilient, highly-scalable Card Issuer Processor that processes more than $10 billions in transactions every year."
+                  `Consistent experience as a Software Engineer in a challenging and dynamic environment within a global-scale credit card issuer/processor. Responsible for actively contributing to the development and maintenance of a resilient and highly scalable system, processing over $10 billion in transactions annually.`
               })}
-            </li>
-            <li>
+            </p>
+            <p className='mt-2'>
               {formatMessage({
                 id:
-                  'The main technologies I am in touch with are Golang, MongoDB, SQS, and S3.',
+                  'wexExperience2',
                 defaultMessage:
-                  'The main technologies I am in touch with are Golang, MongoDB, SQS, and S3.'
+                  `Successfully conceived and implemented an innovative project introducing a new payment method, significantly optimizing user experience.`
               })}
-            </li>
+            </p>
           </div>
           <div className="portfolio-date text-md-right">
             <span className="text-primary">
@@ -82,30 +98,22 @@ const Experience = () => {
           <div>
             <h3 className="mb-0">Fullstack Developer</h3>
             <div className="subheading mb-3">KiwiMe</div>
-            <li>
+            <p>
               {formatMessage({
                 id:
-                  'KiwiMe is an online same-day delivery service.',
+                  'kiwimeExperience1',
                 defaultMessage:
-                  'KiwiMe is an online same-day delivery service.'
+                  `I actively contributed as a Software Developer in a dynamic logistics startup, playing a key role in the successful design and implementation of an innovative system from scratch, which quickly attracted thousands of users within weeks.`
               })}
-            </li>
-            <li>
+            </p>
+            <p className='mt-2'>
               {formatMessage({
                 id:
-                  'Backend development using Java 11, Spring Framework 5, Spring Boot 2, PostgreSQL and Onion Architecture.',
+                  'kiwimeExperience2',
                 defaultMessage:
-                  'Backend development using Java 11, Spring Framework 5, Spring Boot 2, PostgreSQL and Onion Architecture.'
+                  `Utilizing a variety of cutting-edge technologies, including Java 11, Spring MVC, Spring WebFlux, Golang, PostgreSQL, DynamoDB, MongoDB, SQS, and SNS, I played an integral role in developing the robust and highly scalable backend that powered our platform. Additionally, I worked with CI/CD tools such as CircleCI and Jenkins.`
               })}
-            </li>
-            <li>
-              {formatMessage({
-                id:
-                  'Containerization using Docker, CI/CD with CircleCI and AWS as the Cloud Provider.',
-                defaultMessage:
-                  'Containerization using Docker, CI/CD with CircleCI and AWS as the Cloud Provider.'
-              })}
-            </li>
+            </p>
           </div>
           <div className="portfolio-date text-md-right">
             <span className="text-primary">
@@ -125,30 +133,22 @@ const Experience = () => {
           <div>
             <h3 className="mb-0">Fullstack Developer</h3>
             <div className="subheading mb-3">Gestão Inteligente Software</div>
-            <li>
+            <p>
               {formatMessage({
                 id:
-                  'Web development using technologies like PHP, Laravel, Vue.js, Bootstrap and Tailwind.',
+                  'gisExperience1',
                 defaultMessage:
-                  'Web development using technologies like PHP, Laravel, Vue.js, Bootstrap and Tailwind.'
+                  `I played a significant role as an intern at a consulting firm specialized in on-demand software production for various clients. Responsible for a wide range of activities, from direct client interaction to project design and implementation, I made significant contributions to the company's revenue and reputation, ensuring the delivery of projects with quality and within the specified timeframe.`
               })}
-            </li>
-            <li>
+            </p>
+            <p className='mt-2'>
               {formatMessage({
                 id:
-                  'Implementation of integrations with external services like Mercado Pago Payments, Stripe Subscriptions and Google Speech-Recognition.',
+                  'gisExperience2',
                 defaultMessage:
-                  'Implementation of integrations with external services like Mercado Pago Payments, Stripe Subscriptions and Google Speech-Recognition.'
+                  `I was instrumental in the development of web applications using cutting-edge technologies such as PHP, Laravel, Vue.js, Bootstrap, and Tailwind, demonstrating strong skills in interface development and creating engaging user experiences. Additionally, I implemented integrations with renowned external services, including Mercado Pago Payments, Stripe Subscriptions, and Google Speech-Recognition, expanding the functional capabilities of the developed applications.`
               })}
-            </li>
-            <li>
-              {formatMessage({
-                id:
-                  'Conducting meetings with customers to identify requirements and to present results.',
-                defaultMessage:
-                  'Conducting meetings with customers to identify requirements and to present results.'
-              })}
-            </li>
+            </p>
           </div>
           <div className="portfolio-date text-md-right">
             <span className="text-primary">
