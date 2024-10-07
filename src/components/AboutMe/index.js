@@ -1,8 +1,8 @@
-import React from 'react';
-import config from '../../../config';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { useFormatMessage } from 'react-intl-hooks';
+import React from "react";
+import config from "../../../config";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { useFormatMessage } from "react-intl-hooks";
 
 const AboutMe = () => {
   const formatMessage = useFormatMessage();
@@ -18,10 +18,10 @@ const AboutMe = () => {
           <span className="text-primary">{config.lastName}</span>
         </h1>
         <div className="subheading mb-5">
-          Campos dos Goytacazes, Rio de Janeiro{' - '}
+          São Paulo, SP{" - "}
           {formatMessage({
-            id: 'Brazil',
-            defaultMessage: 'Brazil'
+            id: "Brazil",
+            defaultMessage: "Brazil",
           })}
         </div>
         <p className="lead mb-5">
@@ -29,7 +29,7 @@ const AboutMe = () => {
             id:
               "I am a software craftsman with a burning desire to produce high-quality work. As a programmer, it is my job to solve problems, and more often than not, the solutions are not immediately obvious. The process of debugging ultimately helped foster the growth of my attention to detail and critical thinking abilities.",
             defaultMessage:
-              "I am a software craftsman with a burning desire to produce high-quality work. As a programmer, it is my job to solve problems, and more often than not, the solutions are not immediately obvious. The process of debugging ultimately helped foster the growth of my attention to detail and critical thinking abilities."
+              "I am a software craftsman with a burning desire to produce high-quality work. As a programmer, it is my job to solve problems, and more often than not, the solutions are not immediately obvious. The process of debugging ultimately helped foster the growth of my attention to detail and critical thinking abilities.",
           })}
         </p>
         <div className="social-icons">
